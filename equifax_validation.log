@@ -1,0 +1,943 @@
+blue-dog Ingest Validation Utility
+The application is starting
+Test data: HELLO
+Inside: Results::Results()
+Print each row and it's columns values
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationCore
+Test Method: validation()
+Target Database: troa_dev.organization_core
+Report Datetime:  UNKNOWN
+Partition Id: 53
+Test Successful - file_partitionid_in: 53 is equal to db_partitionid: 53
+The Date 1: 2019-05-27 00:00:00
+Test Failed - file_update_date_in: 2019-05-27 00:00:00 Not Equal db_update_date_in: 2019-05-27 00:00:00+00:00
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationName
+Test Method: validation()
+Target Database: troa_dev.organization_name
+Report Datetime:  2019-10-24 16:15:51.722386
+Partition: Equifax_Domestic
+Partition Id: 53
+Test Successful - file_partitionid_in: 53 is equal to db_partitionid: 53
+Test Successful - file_name_in: MCDONALD'S is equal to db_name_in: MCDONALD'S
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationAddress
+Test Method: validation()
+Target Database: troa_dev.organization_address
+Report Datetime:  2019-10-24 16:15:52.171835
+Partition: Equifax_Domestic
+Partition Id: 53
+Test Successful - file_partitionid_in: 53 is equal to db_partitionid: 53
+Test Successful - file_EFX_ADDRESS_in: 868 SUFFIELD ST is equal to db_addressstreet1: 868 SUFFIELD ST
+Test Successful - file_EFX_COUNTYNM_in: Hampden County is equal to db_county: Hampden County
+Test Successful - file_EFX_CITY_in: AGAWAM is equal to db_city: AGAWAM
+Test Successful - file_EFX_STATE_in: MA is equal to db_stateprovidence: MA
+Test Successful - file_EFX_ZIPCODE_in: 1001 is equal to db_postal5: 1001
+Test Successful - file_EFX_ZIP4_in: 2991 is equal to db_postal: 2991
+Test Successful - file_EFX_CTRYISOCD_in: USA is equal to db_countrycode: USA
+Test Successful - file_EFX_COUNTY_in: 13 is equal to db_countycode: 13
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationPhone
+Test Method: validation()
+Target Database: troa_dev.organization_phone
+Report Datetime:  2019-10-24 16:15:52.617978
+Partition: Equifax_Domestic
+Partition Id: 53
+Test Successful - file_partitionid_in: 53 is equal to db_partitionid: 53
+Test Failed - file_EFX_PHONE_in: 4137866863.0 Not Equal db_phone: 4137866863
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationPhone
+Test Method: validation_fax()
+Target Database: troa_dev.organization_phone
+Report Datetime:  2019-10-24 16:15:53.141799
+Partition: Equifax_Domestic
+Partition Id: 53
+Test Successful - file_partitionid_in: 53 is equal to db_partitionid: 53
+Test Successful - file_EFX_FAXPHONE_in: 4137866863 is equal to db_phone: 4137866863
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationEmail
+Test Method: validation()
+Target Database: troa_dev.organization_email
+Report Datetime:  2019-10-24 16:15:53.599265
+Partition Id: 53
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationWebsite
+Test Method: validation()
+Target Database: troa_dev.organization_website
+Report Datetime:  2019-10-24 16:15:54.127452
+Partition Id: 53
+Test Successful - file_partitionid_in: 53 is equal to db_partitionid: 53
+Test Successful - file_EFX_URL_in: mcdonalds.com is equal to db_website: mcdonalds.com
+************************
+** TEST RESULTS ********
+************************
+Partition: Equifax_Domestic
+Partition Id: 53
+Report Datetime:  2019-10-24 16:15:54.576885
+Test Successful - file_partitionid_in: 53 is equal to db_partitionid: 53
+Test Successful - file_EFX_PRIMSIC_in: 5812.0 is equal to db_sicid: 5812
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:15:55.107145
+Partition Id: 53
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:15:55.558040
+Partition Id: 53
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:15:56.088188
+Partition Id: 53
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:15:56.548365
+Partition Id: 53
+Data: EFXID: 53
+Attempting to connect o the database
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:15:57.070796
+Partition: Equifax_Domestic
+Partition Id: 53
+naicsorder:  1
+Test Successful - file_partitionid_in: 53 is equal to db_partitionid: 53
+Test Successful - file_EFX_NAICSCODE1_in: 722511.0 is equal to db_naicsid: 722511
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:15:57.520791
+Partition: Equifax_Domestic
+Partition Id: 53
+naicsorder:  2
+Test Successful - file_partitionid_in: 53 is equal to db_partitionid: 53
+Test Successful - file_EFX_NAICSCODE_N_in: 722000.0 is equal to db_naicid: 722000
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:15:58.053943
+Partition: Equifax_Domestic
+Partition Id: 53
+naicsorder:  3
+Test Successful - file_partitionid_in: 53 is equal to db_partitionid: 53
+Test Successful - file_EFX_NAICSCODE_N_in: 722513.0 is equal to db_naicid: 722513
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:15:58.511717
+file_partitionid_in Id: 53
+naicsorder:  4
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:15:59.057043
+file_partitionid_in Id: 53
+naicsorder:  5
+Note: Ticker Symbol not found in source data
+An exception occurred
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationEmployee
+Test Method: validation()
+Target Database: troa_dev.organization_employee
+Report Datetime:  2019-10-24 16:15:59.519963
+Partition: Equifax_Domestic
+Partition Id: 53
+Test Successful - file_partitionid_in: 53 is equal to db_partitionid: 53
+Test Successful - file_EFX_ACTLEMP_in: 23 is equal to db_numemployee: 23
+Test Failed - file_EFX_ACTLEMPYR_in:      Not Equal db_associatedyear: 
+Print each row and it's columns values
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationCore
+Test Method: validation()
+Target Database: troa_dev.organization_core
+Report Datetime:  UNKNOWN
+Partition Id: 54
+Test Successful - file_partitionid_in: 54 is equal to db_partitionid: 54
+The Date 1: 2019-06-01 00:00:00
+Test Failed - file_update_date_in: 2019-06-01 00:00:00 Not Equal db_update_date_in: 2019-06-01 00:00:00+00:00
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationName
+Test Method: validation()
+Target Database: troa_dev.organization_name
+Report Datetime:  2019-10-24 16:16:00.511319
+Partition: Equifax_Domestic
+Partition Id: 54
+Test Successful - file_partitionid_in: 54 is equal to db_partitionid: 54
+Test Successful - file_name_in: SHELL is equal to db_name_in: SHELL
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationAddress
+Test Method: validation()
+Target Database: troa_dev.organization_address
+Report Datetime:  2019-10-24 16:16:01.034103
+Partition: Equifax_Domestic
+Partition Id: 54
+Test Successful - file_partitionid_in: 54 is equal to db_partitionid: 54
+Test Successful - file_EFX_ADDRESS_in: 325 MAIN ST is equal to db_addressstreet1: 325 MAIN ST
+Test Successful - file_EFX_COUNTYNM_in: Hampden County is equal to db_county: Hampden County
+Test Successful - file_EFX_CITY_in: AGAWAM is equal to db_city: AGAWAM
+Test Successful - file_EFX_STATE_in: MA is equal to db_stateprovidence: MA
+Test Successful - file_EFX_ZIPCODE_in: 1001 is equal to db_postal5: 1001
+Test Successful - file_EFX_ZIP4_in: 1805 is equal to db_postal: 1805
+Test Successful - file_EFX_CTRYISOCD_in: USA is equal to db_countrycode: USA
+Test Successful - file_EFX_COUNTY_in: 13 is equal to db_countycode: 13
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationPhone
+Test Method: validation()
+Target Database: troa_dev.organization_phone
+Report Datetime:  2019-10-24 16:16:01.477868
+Partition: Equifax_Domestic
+Partition Id: 54
+Test Successful - file_partitionid_in: 54 is equal to db_partitionid: 54
+Test Failed - file_EFX_PHONE_in: 4137864860.0 Not Equal db_phone: 4137864860
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationPhone
+Test Method: validation_fax()
+Target Database: troa_dev.organization_phone
+Report Datetime:  2019-10-24 16:16:02.003950
+Partition Id: 54
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationEmail
+Test Method: validation()
+Target Database: troa_dev.organization_email
+Report Datetime:  2019-10-24 16:16:02.459820
+Partition Id: 54
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationWebsite
+Test Method: validation()
+Target Database: troa_dev.organization_website
+Report Datetime:  2019-10-24 16:16:02.987606
+Partition Id: 54
+************************
+** TEST RESULTS ********
+************************
+Partition: Equifax_Domestic
+Partition Id: 54
+Report Datetime:  2019-10-24 16:16:03.447864
+Test Successful - file_partitionid_in: 54 is equal to db_partitionid: 54
+Test Successful - file_EFX_PRIMSIC_in: 5541.0 is equal to db_sicid: 5541
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:16:03.978505
+Partition: Equifax_Domestic
+Partition Id: 54
+sicorder:  2
+Test Successful - file_partitionid_in: 54 is equal to db_partitionid: 54
+Test Successful - file_EFX_SECSIC_N_in: 5983.0 is equal to db_sicid: 5983
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:16:04.432047
+Partition Id: 54
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:16:04.962572
+Partition Id: 54
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:16:05.413687
+Partition Id: 54
+Data: EFXID: 54
+Attempting to connect o the database
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:16:05.951201
+Partition: Equifax_Domestic
+Partition Id: 54
+naicsorder:  1
+Test Successful - file_partitionid_in: 54 is equal to db_partitionid: 54
+Test Successful - file_EFX_NAICSCODE1_in: 447190.0 is equal to db_naicsid: 447190
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:16:06.411330
+file_partitionid_in Id: 54
+naicsorder:  2
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:16:06.943400
+file_partitionid_in Id: 54
+naicsorder:  3
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:16:07.397294
+file_partitionid_in Id: 54
+naicsorder:  4
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:16:07.929232
+file_partitionid_in Id: 54
+naicsorder:  5
+Note: Ticker Symbol not found in source data
+An exception occurred
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationEmployee
+Test Method: validation()
+Target Database: troa_dev.organization_employee
+Report Datetime:  2019-10-24 16:16:08.387709
+Partition: Equifax_Domestic
+Partition Id: 54
+Test Successful - file_partitionid_in: 54 is equal to db_partitionid: 54
+Test Successful - file_EFX_ACTLEMP_in: 4 is equal to db_numemployee: 4
+Test Failed - file_EFX_ACTLEMPYR_in:      Not Equal db_associatedyear: 
+Print each row and it's columns values
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationCore
+Test Method: validation()
+Target Database: troa_dev.organization_core
+Report Datetime:  UNKNOWN
+Partition Id: 55
+Test Successful - file_partitionid_in: 55 is equal to db_partitionid: 55
+The Date 1: 2019-05-21 00:00:00
+Test Failed - file_update_date_in: 2019-05-21 00:00:00 Not Equal db_update_date_in: 2019-05-21 00:00:00+00:00
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationName
+Test Method: validation()
+Target Database: troa_dev.organization_name
+Report Datetime:  2019-10-24 16:16:09.285333
+Partition: Equifax_Domestic
+Partition Id: 55
+Test Successful - file_partitionid_in: 55 is equal to db_partitionid: 55
+Test Successful - file_name_in: FLORAL CONCEPTS BY TOM is equal to db_name_in: FLORAL CONCEPTS BY TOM
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationAddress
+Test Method: validation()
+Target Database: troa_dev.organization_address
+Report Datetime:  2019-10-24 16:16:09.740122
+Partition: Equifax_Domestic
+Partition Id: 55
+Test Successful - file_partitionid_in: 55 is equal to db_partitionid: 55
+Test Failed - file_EFX_ADDRESS_in: 161 MAIN ST Not Equal db_addressstreet1: PO BOX 931
+Test Failed - file_EFX_COUNTYNM_in: Hampden County Not Equal db_county: 
+Test Successful - file_EFX_CITY_in: AGAWAM is equal to db_city: AGAWAM
+Test Successful - file_EFX_STATE_in: MA is equal to db_stateprovidence: MA
+Test Successful - file_EFX_ZIPCODE_in: 1001 is equal to db_postal5: 1001
+Test Failed - file_EFX_ZIP4_in: 1804 Not Equal db_postal: 0931
+Test Successful - file_EFX_CTRYISOCD_in: USA is equal to db_countrycode: USA
+Test Failed - file_EFX_COUNTY_in: 13 Not Equal db_countycode: 
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationPhone
+Test Method: validation()
+Target Database: troa_dev.organization_phone
+Report Datetime:  2019-10-24 16:16:10.251926
+Partition: Equifax_Domestic
+Partition Id: 55
+Test Successful - file_partitionid_in: 55 is equal to db_partitionid: 55
+Test Failed - file_EFX_PHONE_in: 4137862622.0 Not Equal db_phone: 4137862622
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationPhone
+Test Method: validation_fax()
+Target Database: troa_dev.organization_phone
+Report Datetime:  2019-10-24 16:16:10.710001
+Partition Id: 55
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationEmail
+Test Method: validation()
+Target Database: troa_dev.organization_email
+Report Datetime:  2019-10-24 16:16:11.186431
+Partition Id: 55
+Test Successful - file_partitionid_in: 55 is equal to db_partitionid: 55
+Test Successful - file_EFX_EMAIL_in: t.fredette@floralconceptsbytom.net is equal to db_email: t.fredette@floralconceptsbytom.net
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationWebsite
+Test Method: validation()
+Target Database: troa_dev.organization_website
+Report Datetime:  2019-10-24 16:16:11.652541
+Partition Id: 55
+Test Successful - file_partitionid_in: 55 is equal to db_partitionid: 55
+Test Successful - file_EFX_URL_in: www.floralconceptsbytom.com is equal to db_website: www.floralconceptsbytom.com
+************************
+** TEST RESULTS ********
+************************
+Partition: Equifax_Domestic
+Partition Id: 55
+Report Datetime:  2019-10-24 16:16:12.145756
+Test Successful - file_partitionid_in: 55 is equal to db_partitionid: 55
+Test Successful - file_EFX_PRIMSIC_in: 5992.0 is equal to db_sicid: 5992
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:16:12.600205
+Partition: Equifax_Domestic
+Partition Id: 55
+sicorder:  2
+Test Successful - file_partitionid_in: 55 is equal to db_partitionid: 55
+Test Successful - file_EFX_SECSIC_N_in: 1542.0 is equal to db_sicid: 1542
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:16:13.131933
+Partition: Equifax_Domestic
+Partition Id: 55
+sicorder:  3
+Test Successful - file_partitionid_in: 55 is equal to db_partitionid: 55
+Test Successful - file_EFX_SECSIC_N_in: 181.0 is equal to db_sicid: 0181
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:16:13.588311
+Partition Id: 55
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:16:14.112794
+Partition Id: 55
+Data: EFXID: 55
+Attempting to connect o the database
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:16:14.576467
+Partition: Equifax_Domestic
+Partition Id: 55
+naicsorder:  1
+Test Successful - file_partitionid_in: 55 is equal to db_partitionid: 55
+Test Successful - file_EFX_NAICSCODE1_in: 453110.0 is equal to db_naicsid: 453110
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:16:15.111227
+Partition: Equifax_Domestic
+Partition Id: 55
+naicsorder:  2
+Test Successful - file_partitionid_in: 55 is equal to db_partitionid: 55
+Test Successful - file_EFX_NAICSCODE_N_in: 111422.0 is equal to db_naicid: 111422
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:16:15.559747
+file_partitionid_in Id: 55
+naicsorder:  3
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:16:16.089694
+file_partitionid_in Id: 55
+naicsorder:  4
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:16:16.550508
+file_partitionid_in Id: 55
+naicsorder:  5
+Note: Ticker Symbol not found in source data
+An exception occurred
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationEmployee
+Test Method: validation()
+Target Database: troa_dev.organization_employee
+Report Datetime:  2019-10-24 16:16:17.044843
+Partition: Equifax_Domestic
+Partition Id: 55
+Test Successful - file_partitionid_in: 55 is equal to db_partitionid: 55
+Test Successful - file_EFX_ACTLEMP_in: 2 is equal to db_numemployee: 2
+Test Failed - file_EFX_ACTLEMPYR_in:      Not Equal db_associatedyear: 
+Print each row and it's columns values
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationCore
+Test Method: validation()
+Target Database: troa_dev.organization_core
+Report Datetime:  UNKNOWN
+Partition Id: 56
+Test Successful - file_partitionid_in: 56 is equal to db_partitionid: 56
+The Date 1: 2019-05-21 00:00:00
+Test Failed - file_update_date_in: 2019-05-21 00:00:00 Not Equal db_update_date_in: 2019-05-21 00:00:00+00:00
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationName
+Test Method: validation()
+Target Database: troa_dev.organization_name
+Report Datetime:  2019-10-24 16:16:18.051818
+Partition: Equifax_Domestic
+Partition Id: 56
+Test Successful - file_partitionid_in: 56 is equal to db_partitionid: 56
+Test Failed - file_name_in: AGAWAM ANIMAL HOSPITAL Not Equal db_name_in: AGAWAM ANIMAL HOSPITAL, INC
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationAddress
+Test Method: validation()
+Target Database: troa_dev.organization_address
+Report Datetime:  2019-10-24 16:16:18.507222
+Partition: Equifax_Domestic
+Partition Id: 56
+Test Successful - file_partitionid_in: 56 is equal to db_partitionid: 56
+Test Successful - file_EFX_ADDRESS_in: 65 MILL ST STE 1 is equal to db_addressstreet1: 65 MILL ST STE 1
+Test Successful - file_EFX_COUNTYNM_in: Hampden County is equal to db_county: Hampden County
+Test Successful - file_EFX_CITY_in: AGAWAM is equal to db_city: AGAWAM
+Test Successful - file_EFX_STATE_in: MA is equal to db_stateprovidence: MA
+Test Successful - file_EFX_ZIPCODE_in: 1001 is equal to db_postal5: 1001
+Test Successful - file_EFX_ZIP4_in: 2626 is equal to db_postal: 2626
+Test Successful - file_EFX_CTRYISOCD_in: USA is equal to db_countrycode: USA
+Test Successful - file_EFX_COUNTY_in: 13 is equal to db_countycode: 13
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationPhone
+Test Method: validation()
+Target Database: troa_dev.organization_phone
+Report Datetime:  2019-10-24 16:16:19.049654
+Partition: Equifax_Domestic
+Partition Id: 56
+Test Successful - file_partitionid_in: 56 is equal to db_partitionid: 56
+Test Failed - file_EFX_PHONE_in: 4137864440.0 Not Equal db_phone: 4137864440
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationPhone
+Test Method: validation_fax()
+Target Database: troa_dev.organization_phone
+Report Datetime:  2019-10-24 16:16:19.512266
+Partition: Equifax_Domestic
+Partition Id: 56
+Test Successful - file_partitionid_in: 56 is equal to db_partitionid: 56
+Test Successful - file_EFX_FAXPHONE_in: 4137892970 is equal to db_phone: 4137892970
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationEmail
+Test Method: validation()
+Target Database: troa_dev.organization_email
+Report Datetime:  2019-10-24 16:16:20.065522
+Partition Id: 56
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationWebsite
+Test Method: validation()
+Target Database: troa_dev.organization_website
+Report Datetime:  2019-10-24 16:16:20.524839
+Partition Id: 56
+************************
+** TEST RESULTS ********
+************************
+Partition: Equifax_Domestic
+Partition Id: 56
+Report Datetime:  2019-10-24 16:16:21.064092
+Test Successful - file_partitionid_in: 56 is equal to db_partitionid: 56
+Test Successful - file_EFX_PRIMSIC_in: 742.0 is equal to db_sicid: 0742
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:16:21.519162
+Partition: Equifax_Domestic
+Partition Id: 56
+sicorder:  2
+Test Successful - file_partitionid_in: 56 is equal to db_partitionid: 56
+Test Successful - file_EFX_SECSIC_N_in: 741.0 is equal to db_sicid: 0741
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:16:22.061046
+Partition Id: 56
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:16:22.522328
+Partition Id: 56
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:16:23.062638
+Partition Id: 56
+Data: EFXID: 56
+Attempting to connect o the database
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:16:23.526318
+Partition: Equifax_Domestic
+Partition Id: 56
+naicsorder:  1
+Test Successful - file_partitionid_in: 56 is equal to db_partitionid: 56
+Test Successful - file_EFX_NAICSCODE1_in: 541940.0 is equal to db_naicsid: 541940
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:16:24.068004
+file_partitionid_in Id: 56
+naicsorder:  2
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:16:24.516496
+file_partitionid_in Id: 56
+naicsorder:  3
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:16:25.044792
+file_partitionid_in Id: 56
+naicsorder:  4
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationNaics
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_naics
+Report Datetime:  2019-10-24 16:16:25.502576
+file_partitionid_in Id: 56
+naicsorder:  5
+Note: Ticker Symbol not found in source data
+An exception occurred
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationEmployee
+Test Method: validation()
+Target Database: troa_dev.organization_employee
+Report Datetime:  2019-10-24 16:16:26.042149
+Partition: Equifax_Domestic
+Partition Id: 56
+Test Successful - file_partitionid_in: 56 is equal to db_partitionid: 56
+Test Successful - file_EFX_ACTLEMP_in: 4 is equal to db_numemployee: 4
+Test Failed - file_EFX_ACTLEMPYR_in:      Not Equal db_associatedyear: 
+Print each row and it's columns values
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationCore
+Test Method: validation()
+Target Database: troa_dev.organization_core
+Report Datetime:  UNKNOWN
+Partition Id: 18847927
+Test Successful - file_partitionid_in: 18847927 is equal to db_partitionid: 18847927
+The Date 1: 2018-10-31 00:00:00
+Test Failed - file_update_date_in: 2018-10-31 00:00:00 Not Equal db_update_date_in: 2018-10-31 00:00:00+00:00
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationName
+Test Method: validation()
+Target Database: troa_dev.organization_name
+Report Datetime:  2019-10-24 16:16:27.031435
+Partition: Equifax_Domestic
+Partition Id: 18847927
+Test Successful - file_partitionid_in: 18847927 is equal to db_partitionid: 18847927
+Test Successful - file_name_in: BIKE WORLD is equal to db_name_in: BIKE WORLD
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationAddress
+Test Method: validation()
+Target Database: troa_dev.organization_address
+Report Datetime:  2019-10-24 16:16:27.492057
+Partition: Equifax_Domestic
+Partition Id: 18847927
+Test Successful - file_partitionid_in: 18847927 is equal to db_partitionid: 18847927
+Test Successful - file_EFX_ADDRESS_in: 10225 TELEPHONE RD STE A1 is equal to db_addressstreet1: 10225 TELEPHONE RD STE A1
+Test Successful - file_EFX_COUNTYNM_in: Ventura County is equal to db_county: Ventura County
+Test Successful - file_EFX_CITY_in: VENTURA is equal to db_city: VENTURA
+Test Successful - file_EFX_STATE_in: CA is equal to db_stateprovidence: CA
+Test Successful - file_EFX_ZIPCODE_in: 93004 is equal to db_postal5: 93004
+Test Successful - file_EFX_ZIP4_in: 2860 is equal to db_postal: 2860
+Test Successful - file_EFX_CTRYISOCD_in: USA is equal to db_countrycode: USA
+Test Successful - file_EFX_COUNTY_in: 111 is equal to db_countycode: 111
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationPhone
+Test Method: validation()
+Target Database: troa_dev.organization_phone
+Report Datetime:  2019-10-24 16:16:28.038968
+Partition: Equifax_Domestic
+Partition Id: 18847927
+Test Successful - file_partitionid_in: 18847927 is equal to db_partitionid: 18847927
+Test Failed - file_EFX_PHONE_in: 8056595917.0 Not Equal db_phone: 8056595917
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationPhone
+Test Method: validation_fax()
+Target Database: troa_dev.organization_phone
+Report Datetime:  2019-10-24 16:16:28.496254
+Partition Id: 18847927
+Close the database connection
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationEmail
+Test Method: validation()
+Target Database: troa_dev.organization_email
+Report Datetime:  2019-10-24 16:16:29.028005
+Partition Id: 18847927
+************************
+** TEST RESULTS ********
+************************
+Test Class: DbOrganizationWebsite
+Test Method: validation()
+Target Database: troa_dev.organization_website
+Report Datetime:  2019-10-24 16:16:29.497018
+Partition Id: 18847927
+Test Successful - file_partitionid_in: 18847927 is equal to db_partitionid: 18847927
+Test Successful - file_EFX_URL_in: bicycleworldusa.com is equal to db_website: bicycleworldusa.com
+************************
+** TEST RESULTS ********
+************************
+Partition: Equifax_Domestic
+Partition Id: 18847927
+Report Datetime:  2019-10-24 16:16:30.042544
+Test Successful - file_partitionid_in: 18847927 is equal to db_partitionid: 18847927
+Test Successful - file_EFX_PRIMSIC_in: 5941.0 is equal to db_sicid: 5941
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:16:30.493251
+Partition Id: 18847927
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:16:31.017243
+Partition Id: 18847927
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:16:31.465774
+Partition Id: 18847927
+************************
+** TEST RESULTS ********
+************************
+No record were found matching the query
+Test Class: DbOrganizationSic
+Test Method: validation_secondary()
+Target Database: troa_dev.organization_sic
+Report Datetime:  2019-10-24 16:16:32.003221
+Partition Id: 18847927
+Data: EFXID: 18847927
+Attempting to connect o the database

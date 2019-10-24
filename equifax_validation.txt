@@ -1,0 +1,57 @@
+
+The Blue Dog Application
+Ingest Data Validation Utility
+Technical Document
+Chris Macgowan
+09 Oct 2019
+blue_dog.txt
+
+Description: 
+
+This is the famous technical documentation. 
+This should probablu be loacted in the reead.md filel 
+Maybe someday 
+
+-----------------------------------------------------------------------------
+Overview
+
+This is add will help with ingest data validation. It will be used to read the
+input file that was used during the ingest process. We will parse the input
+and then we will compare the data to the data in the database.
+
+When testing against a sample of Equifax data we are are only selecting a sample size of 15-20 records.
+typically we will pull from the top, middle and end of the data set in a random and unified manner.
+The Equifax consists of some ~54 million rows - and we are pulling 20, so that is about a
+%0.00003704 sample size.
+
+
+-----------------------------------------------------------------------------
+SQL Notes 
+
+Below are some random queries that we used during development testing of the data. 
+
+SELECT partition, idtype, idvalue, idtypetarget, idvaluetarget, status, hashvalue, systemtrackingid, systemtrackingdate, filepath
+    FROM troa_dev.idmap;
+    
+Select DISTINCT partition, idtype, idtypetarget FROM troa_dev.idmap
+    
+SELECT * FROM troa_dev.idmap
+ORDER BY partition ASC, idtype ASC, idvalue ASC, idtypetarget ASC, idvaluetarget ASC LIMIT 100
+    
+SELECT * FROM troa_dev.organization_sic 
+where partitionid = '53' AND partition = 'Equifax_Domestic' 
+
+SELECT * FROM troa_dev.organization_naics
+where partitionid = '18847931' AND partition = 'Equifax_Domestic' 
+
+SELECT * FROM troa_dev.organization_sic
+ORDER BY sourceid ASC, sourceidtype ASC, sicorder ASC LIMIT 100 
+
+
+
+
+
+
+End of Document 
+v.487.001
+
